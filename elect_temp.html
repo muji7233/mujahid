@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Bill</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            border: 2px solid #333;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .bill-details {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .bill-details div {
+            width: 48%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #333;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .total {
+            margin-top: 20px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Electricity Bill</h1>
+        </header>
+
+        <div class="bill-details">
+            <div>
+                <p><strong>Customer Name:</strong> John Doe</p>
+                <p><strong>Address:</strong> 123 Main Street, Cityville</p>
+            </div>
+            <div>
+                <p><strong>Bill Date:</strong> January 1, 2024</p>
+                <p><strong>Due Date:</strong> January 15, 2024</p>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Amount (USD)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Electricity Usage</td>
+                    <td>50.00</td>
+                </tr>
+                <tr>
+                    <td>Service Fee</td>
+                    <td>5.00</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+
+        <div class="total">
+            <p><strong>Total Amount:</strong> 55.00 USD</p>
+        </div>
+    </div>
+</body>
+</html>
